@@ -10,19 +10,28 @@ export default function Formulario(pacientes, setPacientes) {
 
   const [error, setError] = useState(false);
 
+  const generarId = () => {
+    const random = Math.random().toString(36).substr(2);
+    const fecha = Date.now().toString(36);
+
+    return random + fecha;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if ([nombre, propietario, email, alta, sintomas].includes("")) {
       setError(true);
-    } else {
-      setError(false);
+      return;
     }
+    setError(false);
+
     const objetoPaciente = {
       nombre,
       propietario,
       email,
       alta,
       sintomas,
+      id: generarId(),
     };
     setPacientes([...pacientes, objetoPaciente]);
 
