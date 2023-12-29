@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Error from "./error";
 
 export default function Formulario(pacientes, setPacientes) {
   const [nombre, setNombre] = useState("");
@@ -45,13 +46,7 @@ export default function Formulario(pacientes, setPacientes) {
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded-lg py-10 px-5"
       >
-        {error && (
-          <div>
-            <p className="bg-red-100 mb-5 text-red-700 p-3 text-center rounded-md">
-              Todos los campos son obligatorios
-            </p>
-          </div>
-        )}
+        {error && <Error mensaje="Todos los campos son obligatorios"></Error>}
         <div className="mb-5">
           <label
             htmlFor="mascota"
