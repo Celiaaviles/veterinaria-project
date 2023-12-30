@@ -21,7 +21,7 @@ Este proyecto es una aplicación web para la gestión de citas de una clínica v
 
 ## Demo
 
-Puedes ver una demo del proyecto en [este enlace](https://ejemplo.com).
+Puedes ver una demo del proyecto en [https://veterinaria-project.netlify.app/](https://veterinaria-project.netlify.app/).
 
 ## Tecnologías utilizadas
 
