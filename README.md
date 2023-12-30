@@ -1,8 +1,34 @@
-# React + Vite
+# Clínica Veterinaria - Gestión de Citas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web para la gestión de citas de una clínica veterinaria. Permite registrar, leer, editar y eliminar a los pacientes. Los datos de los pacientes se almacenan en el LocalStorage del navegador, por lo que no son persistentes.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Registro de pacientes con:
+  - Nombre de la mascota
+  - Nombre del propietario de la mascota
+  - Email de contacto
+  - Fecha de alta del paciente
+  - Descripción de síntomas
+- Edición y eliminación de pacientes
+
+## Instalación
+
+1. Clonar el proyecto: `git clone https://github.com/Celiaaviles/veterinaria-project.git`
+2. Acceder al directorio: `cd veterinaria-project`
+3. Instalar las dependencias: `npm install`
+4. Iniciar el proyecto: `npm run dev`
+
+## Demo
+
+Puedes ver una demo del proyecto en [este enlace](https://ejemplo.com).
+
+## Tecnologías utilizadas
+
+- React
+- Vite
+- LocalStorage
+
+## Capturas de pantalla
+
+![Captura](./public/Captura.png)
