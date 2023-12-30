@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import Error from "./Error";
+import Error from "./error";
 
 export default function Formulario({
   pacientes,
